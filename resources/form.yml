@@ -1,0 +1,77 @@
+---
+# Format All Message
+# {prefix} = Logo Plugin
+# {player} = Name Player
+# {ipAdd} = Ip-Addess Player
+# {ping} = Ping Player
+# {OS} = OS Player
+# {device} = Device Player
+# {f_date} = First Join Date Player
+# {f_time} = First Join Timer Player
+# {l_date} = Last Join Date Player
+# {l_time} = Last Join Timer Player
+# {rank} = Rank/roleplay player
+# {size} = Scale/size Player
+# {line} = Line for string
+# '&' = Format to color
+formInfo:
+  title: "&lInformation"
+  button: ["&l&cClose", "0", "textures/ui/icon_import"] # ["Text", "imageType", "Url"]
+
+
+formWarps:
+# If you need create Button
+# addButton:
+#   name: "Text to Button"
+#   command: "Fungtion for Button (Note: don't use symbol '/')"
+#   img: ["imageType", "Url"]
+  button1:
+    name: "&lSURVIVAL"
+    command: "say transfer Survival"
+    img: ["0", "textures/ui/servers"]
+  button2:
+    name: "&lCREATIVE"
+    command: "say transfer Creative" 
+    img: ["0", "textures/ui/icon_import"]
+menuWarps:
+  # Format
+  # {line} = Line for string
+  # {warp_name} = Logo Plugin
+  # '&' = Format to color
+  title: "&lTraveling Server"
+  content: "&fSelect to going treveling:"
+  button: "&l{warp_name}{line}&r&oTap to treveling"
+ 
+ 
+formProfile:
+  title: "&lProfile"
+  type: "Form" # Type Profile Player "Form or Message"
+  content:
+    # If type is 'Form'.
+    # Use "true" for activate or "false" for deactivate.  
+    name: true
+    rank: false
+    ipAdd: true
+    os: true
+    ping: true
+    firstJoin: true
+    lastJoin: true
+  message:
+    # If type is 'Message'.
+    - "&aYour Name: &f{player}"
+    - "&aRank / Roleplay: &f{rank}"
+    - "&aIp-Address: &f{ipAdd}"
+    - "&aDevice: &f{OS} / {device}"
+    - "&aPing: &f{ping}ms"
+    - "&aFirst Join: &f{f_date} at {f_time}"
+    - "&aLast Join: &f{l_date} at {l_time}"
+  button: ["&cClose", "0", "textures/ui/icon_import"] # ["Text", "imageType", "Url"]
+
+formSize:
+  title: "&lFiture Size Player"
+  content: "&fYou can edit content in form.yml:"
+  type: "Input" # Type Form Size "Input or Slider"
+  input: ["&aSelect to change size:", "&7Type int", "Default"] # ["Text", "PlaceHolder", "Default"=(size player)]
+  slider: ["&aSelect to change size:", "1", "15"] # ["Text", "min", "max"]
+###########################################
+...

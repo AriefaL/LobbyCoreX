@@ -1,0 +1,54 @@
+---
+# List to activate for Lobby Core
+world-list: 
+  - world
+  - world2
+  - GAMEST
+  
+item:
+  # Items in Lobby Core
+  # Use "true" for activate or "false" for deactivate.
+  info: true
+  travel: true
+  profile: true
+  fiture: true
+  fly: true
+  firework: true
+  size: true
+  hidden: true
+  
+# Format Message
+# {prefix} = Logo Plugin
+# {player} = Name Player
+# {ipAdd} = Ip-Addess Player
+# {ping} = Ping Player
+# {OS} = OS Player
+# {device} = Device Player
+# {f_date} = First Join Date Player
+# {f_time} = First Join Timer Player
+# {l_date} = Last Join Date Player
+# {l_time} = Last Join Timer Player
+# {rank} = Rank/roleplay player
+# {size} = Scale/size Player
+# {line} = Line for string
+# '&' = Format to color
+message:
+  oncreative: "&c#You can't use item in creative mode"
+  cooldown: "&c#You can't use agian in §a{cooldown} §cseconds."
+  cooldownfly: "&f#Time use fly: §a{cooldown} §fseconds."
+  nopermcmd: "&c#You can't use command because don't have permission!"
+  succchangesize: "&f#Success edit scale!"
+  falchangesize: "&c#Falid! not input numberic!"
+  nombchangesize: "&c#Falid! type change is numberic!"
+  minchangesize: "&c#Falid! minimum size is 0!"
+  maxchangesize: "&c#Falid! maximum size is 15!"
+  succcontect: "&f#Success edit content Information!"
+  nocontect: "&c#Please enter text to set content!"
+  
+# This is cooldown for Fireworks and Fly Mode
+# Format 5 = 5 seconds
+cooldown:
+  firework: 10
+  fly: 30
+    
+...

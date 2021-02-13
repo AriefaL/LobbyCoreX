@@ -1,0 +1,6 @@
+---
+# Format replace text
+# \n = {line}
+# § = & 
+Text: "You can edit info in information.yml or run command type /lb setinfo <content>\nif can use command format replace is {line} for enter text, and & for color text."
+...

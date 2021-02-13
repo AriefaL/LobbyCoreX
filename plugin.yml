@@ -1,0 +1,14 @@
+---
+name: LobbyCoreX
+author: AriefaL0677
+api: 3.0.0
+version: 1.0.9
+main: AriefaL0677\lobbycore\Loader
+
+description: Plugin LobbyCore support API 3.17.0++! Follow my Instagram @aariefal_ XD.
+
+permissions:
+  lb.cmd.setinfo:
+    description: Permission to setting content form Information
+    default: op
+...
